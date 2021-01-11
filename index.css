@@ -1,0 +1,12 @@
+* {
+    background-color: black;
+}
+.yellow-text {
+    color: yellow;
+} 
+.border {
+    border-color: black;
+    border-width: 20px;
+    border-style: solid;
+    border-radius: 40px;
+}
