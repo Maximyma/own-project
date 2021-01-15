@@ -69,8 +69,9 @@ header .menu a:hover {
 
 header .banner {
     background-image: url(../img/photograther.png);
+    max-width: 100%;
     width: 1994px;
-    height: 538px;
+    height: 1100px;
     background-size: cover;
     margin: auto;
     display: flex;
@@ -85,6 +86,9 @@ header .banner {
 .points {
     justify-content: flex-start;
     align-items: center;
+}
+.d-block {
+    max-width: 100%;
 }
 p {
     color: #fff;
