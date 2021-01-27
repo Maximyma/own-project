@@ -142,9 +142,6 @@ footer .menu a:hover {
     color: #c09a64;
 }
 @media (max-width: 1200px) {
-    header .banner {
-        max-width: ;
-    }
     .first-paragrath { grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
 
