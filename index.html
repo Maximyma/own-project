@@ -43,11 +43,12 @@
                 <hr size="3" width="50px">
                 <p class=p>A NEW YORK BASED PHOTOGRAPHER SPECIALIZING IN WOMEN’S AND MEN’S FASHION, STREET STYLE, EVENT,
                     AND PORTRAIT PHOTOGRAPHY.</p>
-                <div>
-                    <button onclick="location.href='#contact-ryan'" class="black-button p">CONTACT RYAN</button>
-                </div>
+
+                <button onclick="location.href='#contact-ryan'" class="black-button p">CONTACT RYAN</button>
+
                 <img width="10" height="50" src="img/points.svg" alt="points" class="points">
             </div>
+            <div class="empty"></div>
         </div>
     </header>
     <main>
@@ -77,47 +78,44 @@
                 <button onclick="location.href='#collaboration'" class="white-button about-button">LEARN MORE</button>
             </div>
         </div>
-        <div id="year" class="year"></div>
+        <div>
+            <div id="year" class="year"></div>
 
-    <h1>Get your photo now</h1>
+            <h1 class="text-center get-photo">Get your photo now</h1>
 
-    <div id="countdown" class="countdown">
-      <div class="time">
-        <h2 id="days">00</h2>
-        <small>days</small>
-      </div>
-      <div class="time">
-        <h2 id="hours">00</h2>
-        <small>hours</small>
-      </div>
-      <div class="time">
-        <h2 id="minutes">00</h2>
-        <small>minutes</small>
-      </div>
-      <div class="time">
-        <h2 id="seconds">00</h2>
-        <small>seconds</small>
-      </div>
-      
-    </div>
-    <div class="photo-text">
-    <h3>Design your own photographer</h3>
-    <p>Photographer is free until the 15th March 2021</p>
-    </div>
-    <img
-      src="./img/spinner.gif"
-      alt="Loading..."
-      id="loading"
-      class="loading"
-    />
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="days">00</h2>
+                    <small>days</small>
+                </div>
+                <div class="time">
+                    <h2 id="hours">00</h2>
+                    <small>hours</small>
+                </div>
+                <div class="time">
+                    <h2 id="minutes">00</h2>
+                    <small>minutes</small>
+                </div>
+                <div class="time">
+                    <h2 id="seconds">00</h2>
+                    <small>seconds</small>
+                </div>
 
-    <script src="script.js"></script>
-        <script src="js/countdown.js"></script>
-        <!--
+            </div>
+            <div class="photo-text">
+                <h3 class="text-center">Design your own photographer</h3>
+                <p class="text-center">Photographer is free until the 15th March 2021</p>
+            </div>
+            <img src="./img/spinner.gif" alt="Loading..." id="loading" class="loading" />
+
+            <script src="script.js"></script>
+            <script src="js/countdown.js"></script>
+        </div>
         <div class="image">
             <div>
-                <h2 class="playfair">Latest Works</h2>
-                <p class="st-sans">RYAN'S PASSION IS PHOTOSHOOTS FOR LOOKBOOKS AND COMMERCIALS.</p>
+                <h2 class="playfair text-center">Latest Works</h2>
+                <hr size="3" width="50px" class="text-center">
+                <p class="st-sans text-center">RYAN'S PASSION IS PHOTOSHOOTS FOR LOOKBOOKS AND COMMERCIALS.</p>
             </div>
             <div id="carousel-girl" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -143,30 +141,36 @@
                 </a>
             </div>
         </div>
-        <h2 id="services">Services</h2>
-        <div class="ordinary playfair">
-            <img width="70" height="70" src="img/shutter.svg" class="shutter icon" alt="shutter">
-            <h2>Portraits</h2>
-            <p class="st-sans">Setting the right accents in beautiful portraits.</p>
-            <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-        </div>
-        <div class="ordinary">
-            <img width="70" height="70" src="img/tripod.svg" class="tripod icon" alt="tripod">
-            <h2 class="playfair">Street Style</h2>
-            <p class="st-sans">Catching the brightest moments in the scenery of the big city.</p>
-            <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-        </div>
-        <div class="ordinary">
-            <img width="70" height="70" src="img/camera.svg" class="camera icon" alt="camera">
-            <h2 class="playfair">Advertising</h2>
-            <p class="st-sans">Shootings for advertising campaigns and e-commerce.</p>
-            <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-        </div>
-        <div class="ordinary">
-            <img width="70" height="70" src="img/photography.svg" class="photography icon" alt="photography">
-            <h2 class="playfair">Events</h2>
-            <p class="st-sans">Capturing moments of your important events.</p>
-            <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+        <div class="services">
+            <h2 id="services">Services</h2>
+            <div class="ordinary playfair inline">
+                <img width="70" height="70" src="img/shutter.svg" class="shutter icon" alt="shutter">
+                <h2>Portraits</h2>
+                <p class="st-sans">Setting the right accents in beautiful portraits.</p>
+                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+            </div>
+
+            <div class="ordinary inline">
+                <img width="70" height="70" src="img/tripod.svg" class="tripod icon" alt="tripod">
+                <h2 class="playfair">Street Style</h2>
+                <p class="st-sans">Catching the brightest moments in the scenery of the big city.</p>
+                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+            </div>
+
+            <div class="ordinary inline">
+                <img width="70" height="70" src="img/camera.svg" class="camera icon" alt="camera">
+                <h2 class="playfair">Advertising</h2>
+                <p class="st-sans">Shootings for advertising campaigns and e-commerce.</p>
+                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+            </div>
+
+            <div class="ordinary inline">
+                <img width="70" height="70" src="img/photography.svg" class="photography icon" alt="photography">
+                <h2 class="playfair">Events</h2>
+                <p class="st-sans">Capturing moments of your important events.</p>
+                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+            </div>
+
         </div>
         <div class="ordinary">
             <h2 class="playfair">Let's Shoot!</h2>
@@ -317,42 +321,109 @@
             <img width="360" height="470" src="img/girlxiv.png" alt="girl with petals under the eyes">
             <img width="360" height="470" src="img/girlxv.png" alt="girl in the mirror">
         </div>
-        <div class="text">
-            <h2 id="faq">FAQ</h2>
-            <p class="st-sans">IF YOU HAVE ANY QUESTIONS, PLEASE BROWSE THROUGH THE SECTION BELOW.</p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">Does Ryan shoot only in New York?</h3>
-            <p class="st-sans">Most of Ryan's projects are in New York but shooting is possible in other cities of the
-                USA and other countries upon request.</p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">How long does the editing take?</h3>
-            <p class="st-sans">It all depends on the amount of footage and the number of photos that go through
-                retouching.</p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">What does Ryan shoot?</h3>
-            <p class="st-sans">Ryan is a real guru of fashion, event, commercial photography, and portraits.</p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">How to schedule a shooting?</h3>
-            <p class="st-sans">Fill out the form below or contact Ryan directly. Tell which date you need, and Ryan will
-                do his best to find a time slot for you.</p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">What if I have a creative idea for shooting?</h3>
-            <p class="st-sans">Ryan is open for inquires and interesting opportunities. TFP shoots are possible if your
-                idea is really creative. </p>
-        </div>
-        <div class="text">
-            <h3 class="yellow-text">Where can I find Ryan's works?</h3>
-            <p class="st-sans">Ryan's works are published in different fashion magazines: Haper's Bazaar, Vogue,
-                Cosmopolitan, and many others.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <p class="st-sans">IF YOU HAVE ANY QUESTIONS, PLEASE BROWSE THROUGH THE SECTION BELOW.</p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3 class="yellow-text">Does Ryan shoot only in New York?</h3>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">Most of Ryan's projects are in New York but shooting is possible in other
+                            cities of the
+                            USA and other countries upon request.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3 class="yellow-text">How long does the editing take?</h3>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">It all depends on the amount of footage and the number of photos that go
+                            through
+                            retouching.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3 class="yellow-text">What does Ryan shoot?</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">Ryan is a real guru of fashion, event, commercial photography, and portraits.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3 class="yellow-text">How to schedule a shooting?</h3>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">Fill out the form below or contact Ryan directly. Tell which date you need,
+                            and Ryan will
+                            do his best to find a time slot for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <h3 class="yellow-text">What if I have a creative idea for shooting?</h3>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">Ryan is open for inquires and interesting opportunities. TFP shoots are
+                            possible if your
+                            idea is really creative. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <h3 class="yellow-text">Where can I find Ryan's works?</h3>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="st-sans">Ryan's works are published in different fashion magazines: Haper's Bazaar,
+                            Vogue,
+                            Cosmopolitan, and many others.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <h1 id="contact-ryan">Let's start a conversation.</h1>
+        <h1 id="contact-ryan" class="contact-ryan">Let's start a conversation.</h1>
         <p class="st-sans">RYAN IS LOOKING FORWARD TO HEARING MORE ABOUT YOUR PROJECT AND IDEAS.</p>
         <div>
             <input type="text" placeholder="Enter your full name*" required>
