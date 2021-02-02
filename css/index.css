@@ -21,6 +21,18 @@ body {
     background-color: rgb(28, 28, 28);
     padding: 30px;
 }
+.secosn-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.second-paragrath {
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 hr {
     color: #fff;
 }
@@ -67,6 +79,11 @@ hr {
 }
 .white-button:hover {
     background-color: #c0c0c0;
+}
+.playfair {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
 }
 .logo {
     align-items: center;
