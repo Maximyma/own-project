@@ -18,37 +18,47 @@
     <header>
         <div class="logo">
             <img width="174" height="59" src="img/logo.svg" alt="logo" class="logo-img">
-            <nav class="menu">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#latest-works">Latest works</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact-ryan">Contact Ryan</a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img width="17" height="17" class="border" src="img/facebook.svg" alt="facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img width="17" height="17" class="border" src="img/instagram.svg" alt="instagram">
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img width="17" height="17" class="border" src="img/youtube.svg" alt="youtube">
-                </a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#latest-works">Latest works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-ryan">Contact Ryan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
-        <div class="banner">
-            <div class="banner-text">
-                <p class="yellow-text p">FASHION PHOTOGRAPHER</p>
-                <h1 class=h1>Ryan Allen</h1>
-                <hr size="3" width="50px">
-                <p class=p>A NEW YORK BASED PHOTOGRAPHER SPECIALIZING IN WOMEN’S AND MEN’S FASHION, STREET STYLE, EVENT,
-                    AND PORTRAIT PHOTOGRAPHY.</p>
-
-                <button onclick="location.href='#contact-ryan'" class="black-button p">CONTACT RYAN</button>
-
-                <img width="10" height="50" src="img/points.svg" alt="points" class="points">
+        <div class="main-banner">
+            <div class="box">
+                <div class="shoot-box">
+                    <div class="shoot-box-content">
+                        <p class="yellow-text p">FASHION PHOTOGRAPHER</p>
+                        <h1 class=h1>Ryan Allen</h1>
+                        <hr size="3" width="50px">
+                        <p class=p>A NEW YORK BASED PHOTOGRAPHER SPECIALIZING IN WOMEN’S AND MEN’S FASHION, STREET STYLE, EVENT,
+                            AND PORTRAIT PHOTOGRAPHY.</p>
+                        <button onclick="location.href='#contact-ryan'" class="button-1">REQUEST A QUOTE</button>
+                    </div>
+                </div>
             </div>
-            <div class="empty"></div>
         </div>
     </header>
     <main>
@@ -58,7 +68,7 @@
                     class="girl-and-photographer">
             </div>
             <div class="first-text">
-                <h2 class="playfair">About Ryan Allen</h2>
+                <h2 id="about" class="playfair">About Ryan Allen</h2>
                 <hr size="3" width="50px">
 
                 <p class="st-sans">PROFESSIONAL PHOTOGRAPHER TAKING YOUR BRAND AND IDENTITY TO THE NEXT LEVEL.</p>
@@ -75,10 +85,10 @@
                     and many others fashion brands and models.
                 </p>
 
-                <button onclick="location.href='#collaboration'" class="white-button about-button">LEARN MORE</button>
+                <button onclick="location.href='#faq'" class="button-1">LEARN MORE</button>
             </div>
         </div>
-        <div>
+       <div>
             <div id="year" class="year"></div>
 
             <h1 class="text-center get-photo">Get your photo now</h1>
@@ -140,51 +150,60 @@
                     <span class="visually-hidden">Next</span>
                 </a>
             </div>
-        </div>
+        </div> -->
         <div class="services">
             <h2 id="services">Services</h2>
-            <div class="ordinary playfair inline">
-                <img width="70" height="70" src="img/shutter.svg" class="shutter icon" alt="shutter">
-                <h2>Portraits</h2>
-                <p class="st-sans">Setting the right accents in beautiful portraits.</p>
-                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-            </div>
+            <div class="services-blocks">
+                <div class="services-blocks-item">
+                    <img width="50" height="50" src="img/shutter.svg" class="icon" alt="shutter">
+                    <h2>Portraits</h2>
+                    <p>Setting the right accents in beautiful portraits.</p>
+                    <button class="button-1">REQUEST A QUOTE</button>
+                </div>
 
-            <div class="ordinary inline">
-                <img width="70" height="70" src="img/tripod.svg" class="tripod icon" alt="tripod">
-                <h2 class="playfair">Street Style</h2>
-                <p class="st-sans">Catching the brightest moments in the scenery of the big city.</p>
-                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-            </div>
+                <div class="services-blocks-item">
+                    <img width="50" height="50" src="img/tripod.svg" class="icon" alt="tripod">
+                    <h2>Street Style</h2>
+                    <p>Catching the brightest moments in the scenery.</p>
+                    <button class="button-1">REQUEST A QUOTE</button>
+                </div>
 
-            <div class="ordinary inline">
-                <img width="70" height="70" src="img/camera.svg" class="camera icon" alt="camera">
-                <h2 class="playfair">Advertising</h2>
-                <p class="st-sans">Shootings for advertising campaigns and e-commerce.</p>
-                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
-            </div>
+                <div class="services-blocks-item">
+                    <img width="50" height="50" src="img/camera.svg" class="icon" alt="camera">
+                    <h2>Advertising</h2>
+                    <p>Shootings for advertising e-commerce.</p>
+                    <button class="button-1">REQUEST A QUOTE</button>
+                </div>
 
-            <div class="ordinary inline">
-                <img width="70" height="70" src="img/photography.svg" class="photography icon" alt="photography">
-                <h2 class="playfair">Events</h2>
-                <p class="st-sans">Capturing moments of your important events.</p>
-                <button onclick="location.href='#contact-ryan'" class="black-button">REQUEST A QUOTE</button>
+                <div class="services-blocks-item">
+                    <img width="50" height="50" src="img/photography.svg" class="icon" alt="photography">
+                    <h2>Events</h2>
+                    <p>Capturing moments of your important events.</p>
+                    <button onclick="location.href='#contact-ryan'" class="button-1">REQUEST A QUOTE</button>
+                </div>
             </div>
-
         </div>
-        <div class="ordinary">
-            <h2 class="playfair">Let's Shoot!</h2>
-            <p class="st-sans">SEND A REQUEST RIGHT NOW AND SCHEDULE YOUR NEXT SHOOTING WITH RYAN ALLEN.</p>
-            <button onclick="location.href='#contact-ryan'" class="white-button">REQUEST A QUOTE</button>
-            <button onclick="location.href='#pricing'" class="black-button">LEARN MORE</button>
+        <div class="shoot">
+            <div class="box">
+                <div class="shoot-box">
+                    <div class="shoot-box-content">
+                        <h2>Let's Shoot!</h2>
+                        <p>SEND A REQUEST RIGHT NOW.</p>
+                        <div>
+                            <button class="button-1">REQUEST A QUOTE</button>
+                            <button class="button-1">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="ordinary">
-            <h2 class="playfair">Why Ryan?</h2>
-            <p class="st-sans">PHOTOGRAPHY HAS TRULY BECOME A HUGE PART OF RYAN'S LIFE.</p>
-            <div class="list">
-                <article>
-                    <h3 class="playfair">Vast Experience</h3>
-                    <p class="st-sans">Ryan has been photographing for more than 10 years, 4 of which he has worked as a
+        <div class="services">
+            <h2 class="why">Why Ryan?</h2>
+            <p class="why">PHOTOGRAPHY HAS TRULY BECOME A HUGE PART OF RYAN'S LIFE.</p>
+            <div class="advantages-blocks">
+                <article  class="advantages-blocks-item">
+                    <h3>Vast Experience</h3>
+                    <p>Ryan has been photographing for more than 10 years, 4 of which he has worked as a
                         fashion photographer.</p>
                     <ul>
                         <li>58 clients in the USA</li>
@@ -192,19 +211,19 @@
                         <li>Shooting for 5+ top magazines</li>
                     </ul>
                 </article>
-                <article>
-                    <h3 class="playfair">Modern Equipment</h3>
-                    <p class="st-sans">He uses only the latest equipment which provides amazing quality and highlights
+                <article  class="advantages-blocks-item">
+                    <h3>Modern Equipment</h3>
+                    <p>He uses only the latest equipment which provides amazing quality and highlights
                         the details in every frame.</p>
                     <ul>
-                        <li>Canon EOS 5D Mark IV 24-105L IS II</li>
-                        <li>Canon EF 24-70mm f/2.8 L II USM lens</li>
-                        <li>POWERPLANT UV 95 mm color filter </li>
+                        <li>Canon EOS 5D Mark</li>
+                        <li>Canon EF 24-70mm</li>
+                        <li>POWERPLANT UV 95 </li>
                     </ul>
                 </article>
-                <article>
-                    <h3 class="playfair">Professional Editing</h3>
-                    <p class="st-sans">After the photoshoot, all photos undergo thorough editing, you get a format that
+                <article  class="advantages-blocks-item">
+                    <h3>Professional Editing</h3>
+                    <p>After the photoshoot, all photos undergo thorough editing, you get a format that
                         meets your requirements.</p>
                     <ul>
                         <li>Full-resolution final images</li>
@@ -244,13 +263,22 @@
                 <p>All photos will be ready in a maximum of 2 months if you need retouch services.</p>
             </ol>
         </div>
+        </div> -->
+        <div class="shoot">
+            <div class="box">
+                <div class="shoot-box">
+                    <div class="shoot-box-content">
+                        <h2>Schedule Your Shooting</h2>
+                        <p>CONTACT RYAN RIGHT NOW AND GET A 10% DISCOUNT FOR THE NEXT FASHION PHOTOSHOOT.</p>
+                        <div>
+                            <button class="button-1">REQUEST A QUOTE</button>
+                            <button class="button-1">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h2 class="playfair">Schedule Your Shooting</h2>
-            <p class="st-sans">CONTACT RYAN RIGHT NOW AND GET A 10% DISCOUNT FOR THE NEXT FASHION PHOTOSHOOT.</p>
-            <button onclick="location.href='#contact-ryan'" class="white-button">REQUEST A QUOTE</button>
-            <button onclick="location.href='#faq'" class="black-button">LEARN MORE</button>
-        </div>
+        
         <div>
             <h2 id="pricing">Pricing</h2>
             <p class="st-sans">THE COST OF SHOOTING CAN BE DISCUSSED ACCORDING TO THE CONDITIONS.</p>
@@ -416,8 +444,21 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
     <footer>
+        <div class="map" id="contacts">
+            <div class="box2">
+                <div class="contact">
+                    <h3>Contacts.</h3>
+                    <span>Open 8 am - 8 pm</span>
+                    <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+                    <a href="mailto:christmasdecor@email.com">christmasdecor@email.com</a>
+                    <span>help.christmasdecor@email.com</span>
+                    <span>christmasdecor@email.com</span>
+                </div>
+            </div>
+        </div>
+        
         <h1 id="contact-ryan" class="contact-ryan">Let's start a conversation.</h1>
         <p class="st-sans">RYAN IS LOOKING FORWARD TO HEARING MORE ABOUT YOUR PROJECT AND IDEAS.</p>
         <div>
@@ -442,8 +483,6 @@
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#latest-works">Latest works</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#testimonials">Testimonials</a>
             <a href="#contact-ryan">Contact Ryan</a>
         </nav>
     </footer>

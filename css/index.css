@@ -1,12 +1,17 @@
 body {
     background-color: #111;
 }
+
 .carousel {
     max-width: 980px;
     margin: auto;
 }
 .first-paragrath > div {
     margin: 0 20;
+}
+
+.nav-item a:hover {
+    color: red !important;
 }
 .first-paragrath {
     gap: 30px;
@@ -45,8 +50,7 @@ hr {
 .yellow-text {
     color: #c09a64;
 } 
-.icon {
-    filter: invert(.5) sepia(1);
+
 }
 .border {
     margin-left: 15px;
@@ -157,8 +161,6 @@ header .banner {
 }
 p {
     color: #fff;
-    margin-left: auto;
-    margin-right: auto;
 }
 h1, h2, h3, h4, b {
     color: #fff;
@@ -168,11 +170,7 @@ h1, h2, h3, h4, b {
     align-items: center;
     font-family: 'PT Sans', sans-serif;
 }
-button {
-    padding: 19px 21px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
+
 footer .menu a {
     text-decoration: none;
     color: #fff;
@@ -185,12 +183,179 @@ footer .menu a {
 footer .menu a:hover {
     color: #c09a64;
 }
-@media (max-width: 1200px) {
-    .first-paragrath { grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
 
-    }
-    .first-paragrath > div {
-        margin: 30px;
-    }
+
+
+
+#services{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.services{
+    max-width: 1200px;
+    margin: 30px auto;
+    margin-top: 100px;
+}
+
+.services-blocks{
+    display: grid;
+    
+    
+}
+
+.services-blocks-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(46, 46, 46);
+    margin: 20px 10px;
+}
+
+.services-blocks-item *{
+    margin: 10px;
+}
+
+.icon {
+    filter: invert(.5) sepia(1);
+    margin-right: 20px;
+}
+
+.button-1 {
+    padding: 12px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: var(--accent-color);
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    max-width: 200px;
+}
+
+.button-1:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+p {
+    margin: 0;
+}
+
+h2{
+    margin: 0;
+}
+
+.shoot{
+    background-image: url(../img/bg-paralax.png);
+    min-height: 600px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100vw;
+}
+
+.box{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shoot-box {
+    padding-top: 200px;
+    max-width: 500px;
+}
+
+.shoot-box-content {
+    background-color: rgb(255, 255, 255, 0);
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+    max-height: 500px;
+    gap: 20px;
+}
+
+.main-banner{
+    background-image: url(../img/photograther.png);
+    min-height: 800px;
+    /*background-position: right;*/
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 100px -80px;
+}
+
+.advantages-blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantages-blocks-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgb(46, 46, 46);
+    margin: 20px 10px;
+}
+
+.advantages-blocks-item > *{
+    margin: 10px;
+}
+
+li{
+    color: azure;
+}
+
+.why{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.contact{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    right: 0;
+    margin: 50px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px 0.5px rgb(151, 151, 151);
+    color: rgb(82, 82, 82);
+}
+
+.contact-box{
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 730px) {
+
+.services-blocks-item{
+        flex-direction: column;
+}
+
+.first-paragrath { grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+
+}
+.first-paragrath > div {
+    margin: 30px;
+}
+.girl-and-photographer{
+    max-height: 400px;
+}
+
+.advantages-blocks{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid
+}
+
 }
